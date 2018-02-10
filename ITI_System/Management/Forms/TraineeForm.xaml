@@ -1,0 +1,101 @@
+﻿<Window x:Class="ITI_System.Management.TraineeForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ITI_System.Management"
+        mc:Ignorable="d"
+        Title="TraineeForm" Height="500" Width="500"
+        Background="Azure">
+    <Grid Margin="-2,10,2,-10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="66*"/>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="54*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="51*"/>
+            <RowDefinition Height="218*"/>
+        </Grid.RowDefinitions>
+        <ToolBar x:Name="toolBar" VerticalAlignment="Top"  Height="60" HorizontalAlignment="Left" Width="482" Grid.ColumnSpan="4" Margin="14,18,-4,0" >
+
+            <Button x:Name="btnUpdate" Height="59" VerticalAlignment="Bottom" Width="75" Click="btnUpdate_Click">
+                <StackPanel>
+                    <Image Source="D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\edit-find-replace-64.png" Height="32" RenderTransformOrigin="0.5,0.5" >
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleY="-1"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Label Width="39" >Update</Label>
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="btnSave" Click="btnSave_Click"  Height="60" VerticalAlignment="Bottom" Width="57" Margin="0,0,0,-5" >
+                <StackPanel>
+                    <Image Source="D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\save-32.png" Height="30" RenderTransformOrigin="0.41,2" Width="47"/>
+                    <Label Width="auto" Height="28" Content=" Save " RenderTransformOrigin="0.489,1" >
+                        <Label.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="1.909"/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Label.RenderTransform>
+                    </Label>
+                </StackPanel>
+            </Button>
+
+        </ToolBar>
+        <Grid Margin="10,0,0,26" Grid.Row="1" Grid.ColumnSpan="4" Height="323" VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="189*"/>
+                <ColumnDefinition Width="293*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+
+            </Grid.RowDefinitions>
+
+            <TextBox   x:Name="txtTraineeID" Grid.Column="1" Margin="10,10,10,30" Grid.Row="0"></TextBox>
+            <TextBox x:Name="txtTraineeName"  Grid.Row="1" HorizontalAlignment="Center" Height="18" Margin="10,10,10,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="273" Grid.Column="1"/>
+            <TextBox x:Name="txtTraineeQualification"  Grid.Row="4" HorizontalAlignment="Center" Height="18" Margin="10,10,10,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="273" Grid.Column="1"></TextBox>
+
+            <WrapPanel Grid.Column="1" Grid.Row="2" x:Name="txtTraineeGender" Margin="10,10,0,0" >
+                <RadioButton x:Name="rbtnTraineeFemale">Female</RadioButton>
+                <RadioButton x:Name="rBtnTraineeMale">Male</RadioButton>
+            </WrapPanel>
+            <ComboBox x:Name="CmbTraineeLab"  Grid.Row="5" Grid.Column="1" >
+                <ComboBoxItem>lab1</ComboBoxItem>
+                <ComboBoxItem>lab2</ComboBoxItem>
+                <ComboBoxItem>lab3</ComboBoxItem>
+                <ComboBoxItem>lab4</ComboBoxItem>
+
+            </ComboBox>
+            <TextBox x:Name="txtTraineeMilitaryStatus"   Grid.Row="3" HorizontalAlignment="Center" Height="23" Margin="10,10,10,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="273" Grid.ColumnSpan="1" Grid.Column="1"/>
+            <Label  x:Name="lbTraineeID" HorizontalAlignment="Stretch" Margin="44,12,52,10" >ID:</Label>
+            <Label x:Name="lbTraineeName"   Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Height="26" Margin="44,10,52,0"  VerticalAlignment="Top" Width="93" >Name:</Label>
+            <Label x:Name="lbTraineeGender"   Grid.Column="0"  Grid.Row="2" HorizontalAlignment="Center" Height="26" Margin="44,10,52,0"  VerticalAlignment="Top" Width="93"  >Gender:
+            </Label>
+
+            <Label x:Name="lbTraineeMilitaryStatus"   Grid.Row="3" HorizontalAlignment="Center" Height="23" Margin="44,15,42,0"  VerticalAlignment="Top" Width="103"  Grid.Column="0">MilitaryStatus:</Label>
+            <Label x:Name="lbTraineeQualification"   Grid.Row="4" HorizontalAlignment="Center" Height="23" Margin="44,10,42,0"  VerticalAlignment="Top" Width="103"  Grid.Column="0">Qualification:</Label>
+            <Label x:Name="lbTraineeLab"   Grid.Row="5" HorizontalAlignment="Center" Height="23" Margin="44,10,42,0"  VerticalAlignment="Top" Width="103"  Grid.Column="0">TraineeLab:</Label>
+
+
+        </Grid>
+
+
+    </Grid>
+</Window>
