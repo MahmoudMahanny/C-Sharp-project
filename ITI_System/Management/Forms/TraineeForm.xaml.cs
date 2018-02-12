@@ -26,7 +26,6 @@ namespace ITI_System.Management
         {
             InitializeComponent();
         }
-
         public TraineeForm(int ID)
         {
             InitializeComponent();
@@ -49,20 +48,19 @@ namespace ITI_System.Management
             txtTraineeQualification.Text = tr.Qualification;
 
         }
-
         
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
-        {
+        { 
             TrnSer.UpdateTrainee(this);
             this.Close();
-            TrnSer.FillTraineeList();
+            TrnSer.FillTraineeList(this);
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
             TrnSer.AddTrainee(this);
             this.Close();
-            TrnSer.FillTraineeList();
+            
         }
     }
 }

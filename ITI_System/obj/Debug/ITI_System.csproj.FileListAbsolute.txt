@@ -190,6 +190,7 @@ C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\Management\Ot
 C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\ITI_System.g.resources
 C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\ITI_System.Properties.Resources.resources
 C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\ITI_System.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\bin\Debug\ITI_System.exe.config
 C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\ITI_System.exe
 C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\ITI_System.pdb
@@ -240,3 +241,8 @@ C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\
 C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\ITI_System.g.resources
 C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\ITI_System.Properties.Resources.resources
 C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\ITI_System.csproj.GenerateResource.Cache
+=======
+E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\bin\Debug\ITI_System.exe.config
+E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\ITI_System.exe
+E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\ITI_System.pdb
+>>>>>>> b53e144bc1d9fddabf4b9be8c56b74da9821e8aa
