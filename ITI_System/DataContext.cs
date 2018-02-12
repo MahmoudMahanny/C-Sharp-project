@@ -10,7 +10,8 @@ namespace ITI_System
 {
     class DataContext:DbContext
     {
-        public DataContext() : base(@"Data Source=DESKTOP-C3NTTGB\M_MAHANNY;Initial Catalog=ITI_System;Integrated Security=True") { }
+       // public DataContext() : base(@"Data Source=DESKTOP-C3NTTGB\M_MAHANNY;Initial Catalog=ITI_System;Integrated Security=True") { }
+        public DataContext() : base(@"Data Source=DESKTOP-RFITCSA\MSSQLSERVER01;Initial Catalog=ITI_System;Integrated Security=True") { }
         //Managment
         public virtual DbSet<Instructor> Instructor { get; set; }
         public virtual DbSet<Account> Account { get; set; }
