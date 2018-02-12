@@ -11,25 +11,23 @@
             <RowDefinition Height="169*"/>
             <RowDefinition Height="207*"/>
         </Grid.RowDefinitions>
-<<<<<<< HEAD
-        <Image x:Name="image1" HorizontalAlignment="Left" Height="118" VerticalAlignment="Top" Width="641" Source="..\PIC\ITI logo.png" Margin="10,10,0,0"/>
-=======
+
         <Image x:Name="image1" HorizontalAlignment="Left" Height="118" VerticalAlignment="Top" Width="641"  Margin="10,10,0,0"/>
->>>>>>> 75166763920efb4cfc7e55da589021cdda84b55d
+
+        <Image x:Name="image2" HorizontalAlignment="Left" Height="118" VerticalAlignment="Top" Width="641"  Margin="10,10,0,0"/>
         <Label Width="143"  Height="50" Foreground="white"  FontSize="25" FontWeight="Bold" x:Name="lbluserName" Content="User Name" HorizontalAlignment="Left" Margin="27,162,0,0" VerticalAlignment="Top" Grid.RowSpan="2" />
         <Label Width="120"  Height="50" Foreground="white"  FontSize="25" FontWeight="Bold" x:Name="lblPasword" Content="Password" HorizontalAlignment="Left" Margin="28,57.198,0,0" VerticalAlignment="Top" Grid.Row="1" />
         <TextBox Text="admin" Foreground="Green"  FontSize="25" FontWeight="Bold" x:Name="txtUserName" HorizontalAlignment="Left" Height="39" Margin="186,167,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="374" Grid.RowSpan="2"/>
         <PasswordBox Password="admin" Foreground="Green"  FontSize="25" FontWeight="Bold" x:Name="txtpasswordBox" HorizontalAlignment="Left" Margin="186,65.198,0,0" VerticalAlignment="Top" Width="374" Height="38" Grid.Row="1" />
-<<<<<<< HEAD
         <Button x:Name="button" HorizontalAlignment="Left" Margin="359,139,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Height="43" Click="button_Click">
-            <Image x:Name="___ITI_System_component_Apply_32x32_png" Height="32" Source="..\PIC\Apply_32x32.png" Stretch="Fill" Width="54"/>
-=======
-        <Button x:Name="button" HorizontalAlignment="Left" Margin="359,139,0,25" Grid.Row="1" Width="120" Click="button_Click">
-            <Image x:Name="___ITI_System_component_Apply_32x32_png" Height="32" Source="/ITI_System;component/Apply_32x32.png" Stretch="Fill" Width="54"/>
->>>>>>> 75166763920efb4cfc7e55da589021cdda84b55d
+            <Image x:Name="___ITI_System_component_Apply_32x32_png" Height="32"  Stretch="Fill" Width="54"/>
         </Button>
-        <Button x:Name="button_Copy" HorizontalAlignment="Left" Margin="196,139,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Height="43" Click="button_Copy_Click">
-            <Image x:Name="___ITI_System_component_Cancel_64_png" Height="33" Source="..\PIC\Cancel-641.png" Stretch="Fill" Width="64"/>
+        <Button x:Name="button52" HorizontalAlignment="Left" Margin="359,139,0,25" Grid.Row="1" Width="120" Click="button_Click">
+                <Image x:Name="____ITI_System_component_Apply_32x32_png" Height="32"  Stretch="Fill" Width="54"/>
+            </Button>
+
+            <Button x:Name="button_Copy" HorizontalAlignment="Left" Margin="196,139,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Height="43" Click="button_Copy_Click">
+            <Image x:Name="___ITI_System_component_Cancel_64_png" Height="33"  Stretch="Fill" Width="64"/>
         </Button>
 
     </Grid>
