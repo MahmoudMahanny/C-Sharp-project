@@ -17,9 +17,13 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <ToolBar x:Name="toolBar" VerticalAlignment="Top" RenderTransformOrigin="0.497,1.846" Height="69" HorizontalAlignment="Left" Width="272" Margin="-6,-69,0,0" Grid.ColumnSpan="2">
-                <Button   x:Name="btnAdd" MouseDoubleClick="btnAdd_MouseDoubleClick">
+                <Button   x:Name="btnAdd" MouseDoubleClick="btnAdd_MouseDoubleClick" Click="btnAdd_Click">
                     <StackPanel>
+<<<<<<< HEAD
                         <Image Source="..\PIC\D:\ITI\c# project\ITI_Syst\ITI_System\Management\PIC\if_Add-Male-User_49576.png" Height="32"></Image>
+=======
+                        <Image Source="..\PIC\if_Add-Male-User_49576.png" Height="32"></Image>
+>>>>>>> 75166763920efb4cfc7e55da589021cdda84b55d
                         <Label >Add</Label>
                     </StackPanel>
                 </Button>
@@ -52,7 +56,7 @@
                 </Button>
 
             </ToolBar>
-            <ListBox x:Name="lstTrainee" MouseDoubleClick="ListBox_MouseDoubleClick" SelectionChanged="ListBox_SelectionChanged" Margin="29,117,113,-26" Grid.Row="1" Grid.ColumnSpan="2" />
+            <ListBox x:Name="lstTrainee" MouseDoubleClick="ListBox_MouseDoubleClick" SelectionChanged="ListBox_SelectionChanged" Margin="71,117,10,-77" Grid.Row="1" Grid.ColumnSpan="2" />
             <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="23" Margin="73,71,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" Grid.ColumnSpan="2" TextChanged="txtSearch_TextChanged"/>
             <Label x:Name="lbSearch" Content="Search" HorizontalAlignment="Left" Margin="10,68,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="45"></Label>
 

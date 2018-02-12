@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ITI_System.Management.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,12 +21,14 @@ namespace ITI_System.Management
     public partial class TraineeList : Window
     {
         DataContext context = new DataContext();
+        TraineeServices trnSer = new TraineeServices();
         public TraineeList()
         {
             InitializeComponent();
             lstTrainee.DisplayMemberPath = "Name";
             lstTrainee.SelectedValuePath = "ID";
-          lstTrainee.ItemsSource = context.Trainee.ToList();
+            lstTrainee.ItemsSource = context.Trainee.ToList();
+            // trnSer.FillTraineeList();
         }
 
         private void ListBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -64,32 +67,12 @@ namespace ITI_System.Management
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
-            int ID = int.Parse(lstTrainee.SelectedValue.ToString());
-
-            Trainee tr = (from t in context.Trainee
-                          where t.ID == ID
-                          select t).FirstOrDefault();
-            context.Trainee.Remove(tr);
-            context.SaveChanges();
-            MessageBox.Show("Sucsesfuly delete");
-            lstTrainee.DisplayMemberPath = "Name";
-            lstTrainee.SelectedValuePath = "ID";
-            lstTrainee.ItemsSource = context.Trainee.ToList();
+            trnSer.DeleteTrainee(this);
         }
 
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
         {
-            if (lstTrainee.SelectedIndex < 0)
-            {
-                return;
-            }
-            else if (lstTrainee.SelectedIndex > 0)
-            {
-                int ID = int.Parse(lstTrainee.SelectedValue.ToString());
-                TraineeForm tf = new TraineeForm(ID);
-                tf.btnSave.Visibility = Visibility.Hidden;
-                tf.ShowDialog();
-            }
+           
         }
           
         
@@ -102,7 +85,7 @@ namespace ITI_System.Management
                 if (lstTrainee.Items[i].ToString().ToLower().Contains(se)&se!="")
                 {
                     MessageBox.Show("founded");
-                    
+                 
 
                 }
                 else
@@ -117,6 +100,11 @@ namespace ITI_System.Management
         private void btnEixt_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            trnSer.ButtonAdd(this);
         }
     }
 }

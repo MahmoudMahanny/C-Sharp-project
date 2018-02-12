@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ITI_System.Management.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,21 +21,11 @@ namespace ITI_System.Management
     public partial class TraineeForm : Window
     {
         DataContext context = new DataContext();
+        TraineeServices TrnSer = new TraineeServices();
         public TraineeForm()
         {
             InitializeComponent();
-
-            //var tr = (from t in context.Trainee
-            //          where t.ID == ID
-            //          select t).FirstOrDefault();
-
-            //txtTraineeName.Text = tr.Name;
-            //txtTraineeGender.Text = tr.Gender;
-            //txtTraineeMilitaryStatus.Text = tr.MilitaryStatus;
-            //txtTraineeQualification.Text = tr.Qualification;
-         
         }
-
         public TraineeForm(int ID)
         {
             InitializeComponent();
@@ -42,8 +33,8 @@ namespace ITI_System.Management
             var tr = (from t in context.Trainee
                       where t.ID == ID
                       select t).FirstOrDefault();
-            
-            if(tr.Gender == "Male")
+
+            if (tr.Gender == "Male")
             {
                 rBtnTraineeMale.IsChecked = true;
             }
@@ -55,91 +46,21 @@ namespace ITI_System.Management
             txtTraineeName.Text = tr.Name;
             txtTraineeMilitaryStatus.Text = tr.MilitaryStatus;
             txtTraineeQualification.Text = tr.Qualification;
-           
-        }
 
-        private bool IsAllLetters(string s)
-        {
-            foreach (char c in s)
-            {
-                if (!Char.IsLetter(c) || c == ' ')
-                    return false;
-            }
-            return true;
         }
+        
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
-        {
-
-            if (txtTraineeName.Text == "")
-            {
-                MessageBox.Show("Please,Enter Name");
-            }
-            else if (!IsAllLetters(txtTraineeName.Text))
-            {
-                MessageBox.Show("Please, Enter Letters Only");
-
-            }
-            else
-            {
-                string gen;
-                if (rbtnTraineeFemale.IsChecked == true)
-                {
-                    gen = "Female";
-                }
-                else {
-                    gen = "Male";
-                }
-                
-                int Id = int.Parse(txtTraineeID.Text.ToString());
-                var tr = (from t in context.Trainee
-                          where t.ID == Id
-                          select t).FirstOrDefault();
-                tr.Name = txtTraineeName.Text;
-                tr.Qualification = txtTraineeQualification.Text;
-                tr.Gender = gen;
-               tr.MilitaryStatus = txtTraineeMilitaryStatus.Text;
-                context.SaveChanges();
-                MessageBox.Show("Sucsesfuly update");
-
-            }
+        { 
+            TrnSer.UpdateTrainee(this);
+            this.Close();
+            TrnSer.FillTraineeList(this);
         }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-            if (txtTraineeID.Text == null || txtTraineeName.Text == null)
-                return;
-            if (txtTraineeName.Text == "" || txtTraineeID.Text == "")
-            {
-                MessageBox.Show("Please,Enter Name and ID ");
-            }
-            else
-            {
-                string gen;
-                if (rbtnTraineeFemale.IsChecked == true)
-                {
-                    gen = "Female";
-                }
-                else
-                {
-                    gen = "Male";
-                }
-                Trainee trainee = new Trainee()
-                {
-                    Name = txtTraineeName.Text,
-                    Qualification = txtTraineeQualification.Text,
-                    MilitaryStatus = txtTraineeMilitaryStatus.Text,
-                    Gender = gen
-                };
-
-                context.Trainee.Add(trainee);
-                context.SaveChanges();
-                MessageBox.Show("Trainee inserted");
-                TraineeList trlst = new TraineeList();
-                trlst.lstTrainee.DisplayMemberPath = "Name";
-                trlst.lstTrainee.SelectedValuePath = "ID";
-                trlst.lstTrainee.ItemsSource = context.Trainee.ToList();
-                this.Close();
-            }
+            TrnSer.AddTrainee(this);
+            this.Close();
+            
         }
     }
 }
