@@ -85,7 +85,7 @@ namespace ITI_System.Management
                 if (lstTrainee.Items[i].ToString().ToLower().Contains(se)&se!="")
                 {
                     MessageBox.Show("founded");
-                    
+                 
 
                 }
                 else

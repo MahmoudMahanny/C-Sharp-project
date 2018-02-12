@@ -20,6 +20,7 @@ namespace ITI_System
     public partial class IntackForm : Window
     {
         DataContext context = new DataContext();
+        Intak_Services k = new Intak_Services();
         public IntackForm()
         {
             InitializeComponent();
@@ -41,55 +42,12 @@ namespace ITI_System
             
         }
 
-        private void Add ()
-        {
-            if (TxtName.Text == null || TxtDesc.Text == null)
-                return;
-            if (TxtName.Text == "" || TxtDesc.Text == "")
-            {
-                MessageBox.Show("Please,Enter Name and Description ");
-            }
-
-            else
-            {
-                Intake intk = new Intake()
-                {
-                    Name = TxtName.Text,
-                    Description = TxtDesc.Text
-
-                };
-
-                context.Intake.Add(intk);
-                context.SaveChanges();
-                MessageBox.Show("intake inserted");
-            }
-        }
-
-       
-
-        private void Update ()
-        {
-            if (TxtName.Text == null || TxtDesc.Text == null)
-                return;
-            if (TxtName.Text == "" || TxtDesc.Text == "")
-            {
-                MessageBox.Show("Please,Enter Name and Description ");
-            }
-            else
-            {
-                int ID = int.Parse(TxtID.Text.ToString());
-
-                var intk = (from k in context.Intake
-                            where k.ID == ID
-                            select k).FirstOrDefault();
-                intk.Name = TxtName.Text;
-                intk.Description = TxtDesc.Text;
-
-                context.SaveChanges();
-                MessageBox.Show("Sucsesfuly Update");
-            }
-        }
         
+
+
+
+        
+
 
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -109,16 +67,20 @@ namespace ITI_System
 
         private void Button_Save(object sender, RoutedEventArgs e)
         {
-            if(this.Name== "frmAdd")
+            
+           // int ID = int.Parse(lstBxInk.ToString());
+
+         
+            
+            if (this.Name == "frmAdd")
             {
-                Add();
+              k. Add(this);
             }
-            else if(this.Name== "frmUdate")
+            else if (this.Name == "frmUdate")
             {
-                Update();
+                k.Update(this);
             }
 
-           
 
         }
 
