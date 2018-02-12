@@ -190,3 +190,6 @@ C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\Management\Ot
 C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\ITI_System.g.resources
 C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\ITI_System.Properties.Resources.resources
 C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\ITI_System.csproj.GenerateResource.Cache
+E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\bin\Debug\ITI_System.exe.config
+E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\ITI_System.exe
+E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\ITI_System.pdb
