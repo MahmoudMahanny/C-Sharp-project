@@ -72,17 +72,7 @@ namespace ITI_System.Management
 
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
         {
-            if (lstTrainee.SelectedIndex < 0)
-            {
-                return;
-            }
-            else if (lstTrainee.SelectedIndex > 0)
-            {
-                int ID = int.Parse(lstTrainee.SelectedValue.ToString());
-                TraineeForm tf = new TraineeForm(ID);
-                tf.btnSave.Visibility = Visibility.Hidden;
-                tf.ShowDialog();
-            }
+           
         }
           
         
@@ -110,6 +100,11 @@ namespace ITI_System.Management
         private void btnEixt_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            trnSer.ButtonAdd(this);
         }
     }
 }
