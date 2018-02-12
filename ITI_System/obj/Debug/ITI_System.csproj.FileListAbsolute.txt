@@ -190,3 +190,59 @@ C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\Management\Ot
 C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\ITI_System.g.resources
 C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\ITI_System.Properties.Resources.resources
 C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\ITI_System.csproj.GenerateResource.Cache
+<<<<<<< HEAD
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\bin\Debug\ITI_System.exe.config
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\ITI_System.exe
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\ITI_System.pdb
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\bin\Debug\ITI_System.exe
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\bin\Debug\ITI_System.pdb
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\bin\Debug\EntityFramework.dll
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\bin\Debug\EntityFramework.xml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\ITI_System.csprojResolveAssemblyReference.cache
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\MainWindow.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\AddIns.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmAccount.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\FrmLogIN.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\frmAddProgram.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmManager.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\frmProgram.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\IntackForm.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\IntackModification.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\TrackForm.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\TrackModification.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\TraineeForm.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\TraineeList.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\WPF1.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\OtherForms\frmAttendanceEmp.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\OtherForms\frmInstructor.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\OtherForms\FrmTrainee.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\App.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\ITI_System_MarkupCompile.cache
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\ITI_System_MarkupCompile.lref
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\MainWindow.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\AddIns.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmAccount.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\FrmLogIN.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\frmAddProgram.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmManager.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\frmProgram.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\IntackForm.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\IntackModification.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\TrackForm.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\TrackModification.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\TraineeForm.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\TraineeList.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\WPF1.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\OtherForms\frmAttendanceEmp.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\OtherForms\frmInstructor.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\OtherForms\FrmTrainee.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\ITI_System.g.resources
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\ITI_System.Properties.Resources.resources
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\ITI_System.csproj.GenerateResource.Cache
+=======
+E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\bin\Debug\ITI_System.exe.config
+E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\ITI_System.exe
+E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\ITI_System.pdb
+>>>>>>> b53e144bc1d9fddabf4b9be8c56b74da9821e8aa

@@ -221,6 +221,7 @@
       <DependentUpon>FrmTrainee.xaml</DependentUpon>
     </Compile>
     <Compile Include="Management\Services\InstructorServices.cs" />
+    <Compile Include="Management\Services\Intak_Services.cs" />
     <Compile Include="Management\Services\TraineeServices.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">

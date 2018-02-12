@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
-C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\
+<<<<<<< HEAD
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\
+=======
+E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\
+>>>>>>> b53e144bc1d9fddabf4b9be8c56b74da9821e8aa
 ITI_System
 none
 false
 DEBUG;TRACE
-C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\App.xaml
+<<<<<<< HEAD
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\App.xaml
 171015420016
 
-58-825281226
-16248163049
+59-565197473
+16837253293
+=======
+E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\App.xaml
+171015420016
+
+58-590047738
+16746691495
+>>>>>>> b53e144bc1d9fddabf4b9be8c56b74da9821e8aa
 MainWindow.xaml;Management\Forms\AddIns.xaml;Management\Forms\FrmAccount.xaml;FrmLogIN.xaml;Management\Forms\frmAddProgram.xaml;Management\Forms\FrmManager.xaml;Management\Forms\frmProgram.xaml;Management\Forms\IntackForm.xaml;Management\Forms\IntackModification.xaml;Management\Forms\TrackForm.xaml;Management\Forms\TrackModification.xaml;Management\Forms\TraineeForm.xaml;Management\Forms\TraineeList.xaml;Management\Forms\WPF1.xaml;Management\OtherForms\frmAttendanceEmp.xaml;Management\OtherForms\frmInstructor.xaml;Management\OtherForms\FrmTrainee.xaml;
 
 False
