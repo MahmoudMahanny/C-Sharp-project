@@ -105,7 +105,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Management\Forms\FrmAddCourses.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Management\Forms\frmAddProgram.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Management\Forms\FrmCourses.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -181,8 +189,14 @@
     <Compile Include="FrmLogIN.xaml.cs">
       <DependentUpon>FrmLogIN.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Management\Forms\FrmAddCourses.xaml.cs">
+      <DependentUpon>FrmAddCourses.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Management\Forms\frmAddProgram.xaml.cs">
       <DependentUpon>frmAddProgram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Forms\FrmCourses.xaml.cs">
+      <DependentUpon>FrmCourses.xaml</DependentUpon>
     </Compile>
     <Compile Include="Management\Forms\FrmManager.xaml.cs">
       <DependentUpon>FrmManager.xaml</DependentUpon>
@@ -220,6 +234,7 @@
     <Compile Include="Management\OtherForms\FrmTrainee.xaml.cs">
       <DependentUpon>FrmTrainee.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Management\Services\CourseServices.cs" />
     <Compile Include="Management\Services\InstructorServices.cs" />
     <Compile Include="Management\Services\TraineeServices.cs" />
     <Compile Include="Migrations\Configuration.cs" />

@@ -15,7 +15,9 @@ namespace ITI_System
         //Marowa
         // public DataContext() : base(@"Data Source=DESKTOP-RFITCSA\MSSQLSERVER01;Initial Catalog=ITI_System;Integrated Security=True") { }
         //Manar
-         public DataContext() : base(@"Data Source=.;Initial Catalog=ITI_System;Integrated Security=True") { }
+         //public DataContext() : base(@"Data Source=.;Initial Catalog=ITI_System;Integrated Security=True") { }
+        //mona
+        public DataContext() : base(@"Data Source=DESKTOP-JPHM84A\MONA;Initial Catalog=ITI_System-Two;Integrated Security=True") { }
 
         //Managment
         public virtual DbSet<Instructor> Instructor { get; set; }
