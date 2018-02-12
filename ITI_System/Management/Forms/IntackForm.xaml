@@ -23,14 +23,14 @@
                 <ToolBar Grid.Row="0" Grid.Column="0" x:Name="toolBar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="974"  Height="83" Margin="-20,12,-950,-11">
                     <Button Click="Button_Save" Name="btnsave" VerticalAlignment="Top" >
                         <StackPanel>
-                            <Image Source="D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\save-64.png" Height="37" Width="65"/>
+                            <Image Source="..\PIC\save-64.png" Height="37" Width="65"/>
                             <Label Margin="18,2,3,7" Content="Save" RenderTransformOrigin="0.695,0.452"/>
                         </StackPanel>
                     </Button>
 
                     <Button Name="btnclear" VerticalAlignment="Stretch" Click="Button_Click_1"  >
                         <StackPanel>
-                            <Image Source="D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\edit-clear.png" Height="37" Width="65"/>
+                            <Image Source="..\PIC\edit-clear.png" Height="37" Width="65"/>
                             <Label Margin="18,2,3,7" Content="Clear" RenderTransformOrigin="0.695,0.452"/>
                         </StackPanel>
                     </Button>
