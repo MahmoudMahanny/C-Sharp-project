@@ -39,10 +39,6 @@ namespace ITI_System.Management.Services
                 context.Trainee.Add(trainee);
                 context.SaveChanges();
                 MessageBox.Show("Trainee inserted");
-                TraineeList trlst = new TraineeList();
-                trlst.lstTrainee.DisplayMemberPath = "Name";
-                trlst.lstTrainee.SelectedValuePath = "ID";
-                trlst.lstTrainee.ItemsSource = context.Trainee.ToList();
             }
         }
         public void UpdateTrainee(TraineeForm t)
@@ -66,6 +62,7 @@ namespace ITI_System.Management.Services
                 }
                 else
                 {
+                    
                     gen = "Male";
                 }
 
@@ -79,6 +76,7 @@ namespace ITI_System.Management.Services
                 tr.MilitaryStatus = t.txtTraineeMilitaryStatus.Text;
                 context.SaveChanges();
                 MessageBox.Show("Sucsesfuly updated");
+                
 
             }
         }
@@ -107,8 +105,8 @@ namespace ITI_System.Management.Services
             }
             return true;
         }
-
-        public void FillTraineeList()
+        
+        public void FillTraineeList(TraineeForm tr)
         {
             TraineeList t = new TraineeList();
             t.lstTrainee.DisplayMemberPath = "Name";
@@ -116,5 +114,19 @@ namespace ITI_System.Management.Services
            t.lstTrainee.ItemsSource = context.Trainee.ToList();
         }
 
+        public void ButtonAdd(TraineeList tr)
+        {
+            if (tr.lstTrainee.SelectedIndex < 0)
+            {
+                return;
+            }
+            else if (tr.lstTrainee.SelectedIndex > 0)
+            {
+                int ID = int.Parse(tr.lstTrainee.SelectedValue.ToString());
+                TraineeForm tf = new TraineeForm(ID);
+                tf.btnSave.Visibility = Visibility.Hidden;
+                tf.ShowDialog();
+            }
+        }
     }
 }
