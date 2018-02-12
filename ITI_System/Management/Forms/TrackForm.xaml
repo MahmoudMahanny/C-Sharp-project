@@ -50,7 +50,7 @@
             <ToolBar x:Name="toolBar"  HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="1536" Height="83" Margin="0,0,-718,0">
                 <Button x:Name="btn_add_save"   Click="Button_Click" VerticalAlignment="Bottom"  >
                     <StackPanel>
-                        <Image Source="D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\save-64.png" Height="37" Width="65"/>
+                        <Image Source="..\PIC\..\PIC\..\PIC\..\PIC\save-64.png" Height="37" Width="65"/>
                         <Label Margin="6,2,3,7" Content="Save" RenderTransformOrigin="0.695,0.452"/>
                     </StackPanel>
                 </Button>
@@ -59,7 +59,7 @@
 
                 <Button x:Name="BtnClear" Click="Button_Click_1"  >
                     <StackPanel x:Name="BtnClear1">
-                        <Image Source="D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\edit-clear.png" Height="37" Width="65"/>
+                        <Image Source="..\PIC\..\PIC\..\PIC\..\PIC\edit-clear.png" Height="37" Width="65"/>
                         <Label Margin="18,2,3,7" Content="Clear" RenderTransformOrigin="0.695,0.452"/>
                     </StackPanel>
                 </Button>

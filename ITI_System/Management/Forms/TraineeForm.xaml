@@ -22,7 +22,7 @@
 
             <Button x:Name="btnUpdate" Height="59" VerticalAlignment="Bottom" Width="75" Click="btnUpdate_Click">
                 <StackPanel>
-                    <Image Source="D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\edit-find-replace-64.png" Height="32" RenderTransformOrigin="0.5,0.5" >
+                    <Image Source="..\PIC\..\PIC\edit-find-replace-64.png" Height="32" RenderTransformOrigin="0.5,0.5" >
                         <Image.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform ScaleY="-1"/>
@@ -38,7 +38,7 @@
 
             <Button x:Name="btnSave" Click="btnSave_Click"  Height="60" VerticalAlignment="Bottom" Width="57" Margin="0,0,0,-5" >
                 <StackPanel>
-                    <Image Source="D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\save-32.png" Height="30" RenderTransformOrigin="0.41,2" Width="47"/>
+                    <Image Source="..\PIC\save-32.png" Height="30" RenderTransformOrigin="0.41,2" Width="47"/>
                     <Label Width="auto" Height="28" Content=" Save " RenderTransformOrigin="0.489,1" >
                         <Label.RenderTransform>
                             <TransformGroup>
