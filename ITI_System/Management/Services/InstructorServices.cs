@@ -11,7 +11,6 @@ namespace ITI_System.Management.Services
         void DeleteInstructor(int ID)
         {
 
-
         }
 
        public void Clear(AddIns a)
