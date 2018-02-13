@@ -52,18 +52,7 @@ namespace ITI_System.Management
         }
 
 
-        private void btnAdd_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            //int ID = int.Parse(lstTrainee.SelectedValue.ToString());
-            Management.TraineeForm tra = new Management.TraineeForm();
-           
-            tra.btnUpdate.Visibility = Visibility.Hidden;
-            //    tra.btnDelete.Visibility = Visibility.Hidden;
-             // tra.btnSave.Visibility = Visibility.Hidden;
-            
-            tra.ShowDialog();
-
-        }
+       
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
@@ -104,6 +93,13 @@ namespace ITI_System.Management
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
+            Management.TraineeForm tra = new Management.TraineeForm();
+
+            tra.btnUpdate.Visibility = Visibility.Hidden;
+          
+
+            tra.ShowDialog();
+
             trnSer.ButtonAdd(this);
         }
     }
