@@ -353,3 +353,5 @@ D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmAddCo
 D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmCourses.g.cs
 D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmAddCourses.baml
 D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmCourses.baml
+C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\Management\Forms\FrmAddCourses.g.cs
+C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\Management\Forms\FrmCourses.g.cs
