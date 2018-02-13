@@ -18,11 +18,15 @@
             </Grid.RowDefinitions>
             <ToolBar x:Name="toolBar" VerticalAlignment="Top" RenderTransformOrigin="0.497,1.846" Height="69" HorizontalAlignment="Left" Width="272" Margin="-6,-69,0,0" Grid.ColumnSpan="2">
                 <Button   x:Name="btnAdd" MouseDoubleClick="btnAdd_MouseDoubleClick" Click="btnAdd_Click">
-                    <StackPanel>
+                </Button>
+                
+                <StackPanel>
+
                         <Image Source="..\PIC\if_Add-Male-User_49576.png" Height="32"></Image>
+
                         <Label >Add</Label>
                     </StackPanel>
-                </Button>
+                
                 <Button x:Name="btnUpdate" Height="59" VerticalAlignment="Bottom" Width="75" Click="btnUpdate_Click">
                     <StackPanel>
                         <Image Source="..\PIC\edit-find-replace-64.png" Height="32" RenderTransformOrigin="0.729,0.5">

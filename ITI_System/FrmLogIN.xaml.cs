@@ -25,9 +25,9 @@ namespace ITI_System.Management.Forms
         public FrmLogIN()
         {
             InitializeComponent();
-            //Account a = new Account() { UserName = "admin", Password = "admin", AccountType = "Manager" };
-            //context.Account.Add(a);
-            //context.SaveChanges();
+            Account a = new Account() { UserName = "admin", Password = "admin", AccountType = "Manager" };
+            context.Account.Add(a);
+            context.SaveChanges();
         }
         
         private void button_Copy_Click(object sender, RoutedEventArgs e)

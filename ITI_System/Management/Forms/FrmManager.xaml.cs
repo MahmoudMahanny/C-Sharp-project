@@ -53,5 +53,11 @@ namespace ITI_System.Management
             WPF1 w = new WPF1();
             w.ShowDialog();
         }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            FrmCourses C = new FrmCourses();
+            C.ShowDialog();
+        }
     }
 }

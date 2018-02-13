@@ -10,11 +10,11 @@
         <StackPanel Margin="0,0,0,157" Height="60">
             <ToolBar x:Name="toolBar" Height="41">
                 <Button x:Name="btnSave" Height="49" Margin="0,0,0,-5" Width="47" Click="btnSave_Click">
-                    <Image x:Name="save_48_png" Height="31" Source="D:\ITI\c# project\ITI_Syst\ITI_System\Management\PIC\save-48.png" Stretch="Fill" Width="31"/>
+                    <Image x:Name="save_48_png" Height="31" Source="..\PIC\save-48.png" Stretch="Fill" Width="31"/>
 
                 </Button>
                 <Button x:Name="btnClear" Height="49" Margin="0,-1,0,-4" Width="53" Click="btnClear_Click">
-                    <Image x:Name="edit_clear_64_png" Height="39" Source="D:\ITI\c# project\ITI_Syst\ITI_System\Management\PIC\edit-clear-64.png" Stretch="Fill" Width="37"/>
+                    <Image x:Name="edit_clear_64_png" Height="39" Source="..\PIC\edit-clear-64.png" Stretch="Fill" Width="37"/>
 
                 </Button>
             </ToolBar>

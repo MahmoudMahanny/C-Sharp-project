@@ -34,7 +34,7 @@
             <Button Width="120" Click="Button_Click">Programme</Button>
             <Button Width="120" Click="Button_Click_1">Intake</Button>
             <Button Width="120" Click="Button_Click_2">Track</Button>
-            <Button Width="120">Course</Button>
+            <Button Width="120" Click="Button_Click_5">Course</Button>
             <Button Width="120" Click="Button_Click_4">Instructor</Button>
             <Button Width="120" Click="Button_Click_3">Trainee</Button>
             
