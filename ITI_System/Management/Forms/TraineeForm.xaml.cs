@@ -29,10 +29,12 @@ namespace ITI_System.Management
         public TraineeForm(int ID)
         {
             InitializeComponent();
-
+  
+          
             var tr = (from t in context.Trainee
                       where t.ID == ID
                       select t).FirstOrDefault();
+            //to check the Gender
 
             if (tr.Gender == "Male")
             {
