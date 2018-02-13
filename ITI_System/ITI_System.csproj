@@ -220,6 +220,7 @@
     <Compile Include="Management\OtherForms\FrmTrainee.xaml.cs">
       <DependentUpon>FrmTrainee.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Management\Services\InstructorServices.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

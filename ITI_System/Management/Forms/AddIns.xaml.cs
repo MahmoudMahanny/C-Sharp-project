@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ITI_System.Management.Services;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -21,7 +22,7 @@ namespace ITI_System
     public partial class AddIns : Window
     {
         DataContext context = new DataContext();
-
+        InstructorServices Services = new InstructorServices();
         public AddIns()
         {
 
@@ -161,37 +162,12 @@ namespace ITI_System
             }
         }
     
-        private void Clear()
-        {
-            txtInstrID.Text = "";
-            txtInstrName.Text = "";
-            txtInstrPhone.Text = "";
-            txtInstrEmail.Text = "";
-            txtInstrAddress.Text = "";
-            txtInstrAccountID.Text = "";
-            dpInstrBDate.SelectedDate = DateTime.Today;
-            if (rbInstrGenderFM.IsChecked == true)
-            {
-                rbInstrGenderFM.IsChecked = false;
-            }
-            else
-            {
-                rbInstrGenderM.IsChecked = false;
-            }
-            if (rbInstrIsMngrNo.IsChecked == true)
-            {
-                rbInstrIsMngrNo.IsChecked = false;
-            }
-            else
-            {
-                rbInstrIsMngrYes.IsChecked = false;
-            }
-        }
-
+        
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
-            Clear(); 
-          
+            Services.Clear(this);
+            
+
         }
     }
 }
