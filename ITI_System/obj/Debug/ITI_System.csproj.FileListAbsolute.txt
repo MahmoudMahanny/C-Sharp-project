@@ -245,7 +245,6 @@ C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\ITI_System.
 E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\bin\Debug\ITI_System.exe.config
 E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\ITI_System.exe
 E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\ITI_System.pdb
-<<<<<<< HEAD
 E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\bin\Debug\ITI_System.exe
 E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\bin\Debug\ITI_System.pdb
 E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\bin\Debug\EntityFramework.dll
@@ -297,6 +296,5 @@ E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\Management
 E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\ITI_System.g.resources
 E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\ITI_System.Properties.Resources.resources
 E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\ITI_System.csproj.GenerateResource.Cache
-=======
 >>>>>>> b53e144bc1d9fddabf4b9be8c56b74da9821e8aa
 >>>>>>> 581d31999d11a963792f8e17234a5a5de5a378f7
