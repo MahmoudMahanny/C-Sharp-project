@@ -8,11 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("management/pic/1-04-641.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("management/pic/cancel-641.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("management/pic/edit-clear-64.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("management/pic/edit_profile%20.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("management/pic/edit_profile%201.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("management/pic/save-48.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("management/pic/apply_32x32.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("management/pic/hide_32x32.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("management/pic/iti%20logo.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("management/pic/iti_logo.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("management/pic/show_32x32.png")]
 
 
