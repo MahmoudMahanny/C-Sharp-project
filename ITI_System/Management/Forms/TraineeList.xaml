@@ -7,19 +7,13 @@
         mc:Ignorable="d"
         Title="TraineeList" Height="500.279" Width="647.581">
     <Viewbox >
-        <Grid >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="15*"/>
-                <ColumnDefinition Width="14*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="19*"/>
-                <RowDefinition Height="25*"/>
-            </Grid.RowDefinitions>
-            <WrapPanel  Height="80" Margin="10,10,0,0" x:Name="toolBar" VerticalAlignment="Top" RenderTransformOrigin="0.497,1.846"  HorizontalAlignment="Left" Width="305" Grid.ColumnSpan="2" >
+        <Grid  >
+            
+            <WrapPanel  Height="80" Margin="10,-71,0,0" x:Name="toolBar" VerticalAlignment="Top" RenderTransformOrigin="0.497,1.846"  HorizontalAlignment="Left" Width="305" Grid.ColumnSpan="2" Grid.RowSpan="2" >
 
-                <StackPanel>
-                    <Button    x:Name="btnAdd"  Click="btnAdd_Click">
+                <StackPanel Height="55">
+                    <Button    x:Name="btnAdd"  Click="btnAdd_Click"
+                               >
 
                         <Image Source="..\PIC\if_Add-Male-User_49576.png" Height="49"></Image>
 
@@ -28,9 +22,9 @@
 
                 </StackPanel>
 
-                <Button  Margin="10" x:Name="btnUpdate" Height="59" VerticalAlignment="Bottom" Width="93" Click="btnUpdate_Click">
+                <Button  Margin="10" x:Name="btnUpdate" Height="49" VerticalAlignment="Bottom" Width="47" Click="btnUpdate_Click">
                     <StackPanel>
-                        <Image Source="..\PIC\edit-find-replace-64.png" Height="26" RenderTransformOrigin="0.729,0.5">
+                        <Image Source="..\PIC\edit-find-replace-64.png" Height="36" RenderTransformOrigin="0.729,0.5" Width="43">
                             <Image.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform ScaleY="-1"/>
@@ -40,26 +34,24 @@
                                 </TransformGroup>
                             </Image.RenderTransform>
                         </Image>
-                        <Label Width="51" Content="Update" Height="24" />
                     </StackPanel>
                 </Button>
-                <Button x:Name="btnDelete" Margin="10"  Height="56" VerticalAlignment="Bottom" Width="57" Click="btnDelete_Click">
+                <Button x:Name="btnDelete" Margin="10"  Height="52" VerticalAlignment="Bottom" Width="49" Click="btnDelete_Click">
                     <StackPanel>
-                        <Image Source="..\PIC\1-04-64.png" Height="30" RenderTransformOrigin="0.41,2" Width="47"/>
-                        <Label Width="auto" Height="28" Content="Delete" RenderTransformOrigin="0.489,1.033" />
+                        <Image Source="..\PIC\1-04-64.png" Height="46" RenderTransformOrigin="0.41,2" Width="47"/>
                     </StackPanel>
                 </Button>
-                <Button x:Name="btnEixt" Height="47" VerticalAlignment="Top" Width="57" RenderTransformOrigin="0.533,0.297" Margin="0,10,0,0" Click="btnEixt_Click">
+                <Button x:Name="btnEixt" Height="53" VerticalAlignment="Top" Width="57" RenderTransformOrigin="0.533,0.297" Margin="0,10,0,0" Click="btnEixt_Click">
                     <StackPanel Height="29">
                         <Image Source="..\PIC\Close_32x32.png" Height="29" RenderTransformOrigin="0.41,2" Width="33"/>
-                        <Label Height="13" Margin="10"  Foreground="AliceBlue" Content="Exit"  FontSize="20" RenderTransformOrigin="0.667,2.55" Width="40" />
+                        <Label Height="13" Margin="10"  Foreground="AliceBlue" Content=""  FontSize="20" RenderTransformOrigin="0.667,2.55" Width="8" />
                     </StackPanel>
                 </Button>
 
             </WrapPanel>
-            <ListBox x:Name="lstTrainee" MouseDoubleClick="ListBox_MouseDoubleClick" SelectionChanged="ListBox_SelectionChanged" Margin="71,117,10,-77" Grid.Row="1" Grid.ColumnSpan="2" />
-            <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="23" Margin="73,71,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" Grid.ColumnSpan="2" TextChanged="txtSearch_TextChanged"/>
-            <Label x:Name="lbSearch" Content="Search" HorizontalAlignment="Left" Margin="10,68,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="45"></Label>
+            <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="23" Margin="70,-1,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" Grid.ColumnSpan="2" TextChanged="txtSearch_TextChanged"/>
+            <Label x:Name="lbSearch" Content="Search:" HorizontalAlignment="Left" Margin="26,-4,0,0" VerticalAlignment="Top" Height="26" Width="66"/>
+            <ListBox x:Name="lstTrainee" MouseDoubleClick="ListBox_MouseDoubleClick" SelectionChanged="ListBox_SelectionChanged" Margin="70,27,36,-82" />
 
         </Grid>
     </Viewbox>
