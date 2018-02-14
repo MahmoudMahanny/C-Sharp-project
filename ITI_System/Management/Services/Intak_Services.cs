@@ -13,7 +13,7 @@ namespace ITI_System
        
         
 
-        public void Update(IntackForm n)
+        public void Update_Intak(IntackForm n)
         {
             if (n.TxtName.Text == null || n.TxtDesc.Text == null)
                 return;
@@ -35,7 +35,7 @@ namespace ITI_System
                 MessageBox.Show("Sucsesfuly Update");
             }
         }
-        public void Add(IntackForm r)
+        public void Add_Intak(IntackForm r)
         {
             if (r.TxtName.Text == null ||r.TxtDesc.Text == null)
                 return;
@@ -57,7 +57,14 @@ namespace ITI_System
                 context.SaveChanges();
                 MessageBox.Show("intake inserted");
             }
+
         }
+        public void clear_Intak (IntackForm c)
+        {
+            c.TxtName.Text = "";
+            c.TxtDesc.Text = "";
+        }
+             
     }
 
 }
