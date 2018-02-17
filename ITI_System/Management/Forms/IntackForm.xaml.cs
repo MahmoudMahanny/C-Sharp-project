@@ -55,11 +55,7 @@ namespace ITI_System
         }
 
        
-        private void Clear()
-        {
-            TxtName.Text = "";
-            TxtDesc.Text = "";
-        }
+       
 
        
 
@@ -74,11 +70,11 @@ namespace ITI_System
             
             if (this.Name == "frmAdd")
             {
-              k. Add(this);
+              k. Add_Intak(this);
             }
             else if (this.Name == "frmUdate")
             {
-                k.Update(this);
+                k.Update_Intak(this);
             }
 
 
@@ -86,7 +82,7 @@ namespace ITI_System
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Clear();
+            k.clear_Intak(this);
 
         }
 

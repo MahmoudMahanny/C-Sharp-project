@@ -21,21 +21,21 @@
             <ToolBar Grid.Row="0" Grid.Column="0" x:Name="toolBar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="959"  Height="83" Margin="0,0,-955,0">
                 <Button Click="Button_Save" x:Name="btnsave" VerticalAlignment="Top" >
                     <StackPanel>
-                        <Image Source="D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\save-64.png" Height="37" Width="65"/>
+                        <Image Source="..\PIC\..\PIC\..\PIC\save-64.png" Height="37" Width="65"/>
                         <Label Margin="18,2,3,7" Content="Save" RenderTransformOrigin="0.695,0.452"/>
                     </StackPanel>
                 </Button>
 
                 <Button x:Name="btnclear" VerticalAlignment="Stretch" Click="Button_Click_1"  >
                     <StackPanel>
-                        <Image Source="D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\D:\ITI\c# project\ITI_System\ITI_System\Management\PIC\edit-clear.png" Height="37" Width="65"/>
+                        <Image Source="..\PIC\..\PIC\..\PIC\edit-clear.png" Height="37" Width="65"/>
                         <Label Margin="18,2,3,7" Content="Clear" RenderTransformOrigin="0.695,0.452"/>
                     </StackPanel>
                 </Button>
 
                 <Button x:Name="btnexit" Height="67" Margin="0,0,0,6" Click="Button_Click_2"   >
                     <StackPanel Height="57">
-                        <Image Source="Cancel-64.png"  Height="36" Width="65"/>
+                        <Image Source="../PIC/Cancel-64.png"  Height="36" Width="65"/>
                         <Label Margin="14,0,8,7" Content="Exit" />
 
                     </StackPanel>
