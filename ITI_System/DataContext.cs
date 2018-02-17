@@ -11,11 +11,11 @@ namespace ITI_System
     class DataContext:DbContext
     {
         //Mahanny
-         public DataContext() : base(@"Data Source=DESKTOP-C3NTTGB\M_MAHANNY;Initial Catalog=ITI_System;Integrated Security=True") { }
+        // public DataContext() : base(@"Data Source=DESKTOP-C3NTTGB\M_MAHANNY;Initial Catalog=ITI_System;Integrated Security=True") { }
         //Marowa
         // public DataContext() : base(@"Data Source=DESKTOP-RFITCSA\MSSQLSERVER01;Initial Catalog=ITI_System;Integrated Security=True") { }
         //Manar
-        // public DataContext() : base(@"Data Source=.;Initial Catalog=ITI_System;Integrated Security=True") { }
+        public DataContext() : base(@"Data Source=.;Initial Catalog=ITI_System;Integrated Security=True") { }
         //Mahmoud
 <<<<<<< HEAD
         public DataContext() : base(@"Data Source=DESKTOP-5I5TGDJ;Initial Catalog=ITI_System;Integrated Security=True") { }
