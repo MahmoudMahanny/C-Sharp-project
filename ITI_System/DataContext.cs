@@ -15,13 +15,12 @@ namespace ITI_System
         //Marowa
         // public DataContext() : base(@"Data Source=DESKTOP-RFITCSA\MSSQLSERVER01;Initial Catalog=ITI_System;Integrated Security=True") { }
         //Manar
-        public DataContext() : base(@"Data Source=.;Initial Catalog=ITI_System;Integrated Security=True") { }
+       // public DataContext() : base(@"Data Source=.;Initial Catalog=ITI_System;Integrated Security=True") { }
         //Mahmoud
-<<<<<<< HEAD
-        public DataContext() : base(@"Data Source=DESKTOP-5I5TGDJ;Initial Catalog=ITI_System;Integrated Security=True") { }
+
+       // public DataContext() : base(@"Data Source=DESKTOP-5I5TGDJ;Initial Catalog=ITI_System;Integrated Security=True") { }
         //mona
-        //public DataContext() : base(@"Data Source=DESKTOP-JPHM84A\MONA;Initial Catalog=ITI_System-Two;Integrated Security=True") { }
-=======
+        public DataContext() : base(@"Data Source=DESKTOP-JPHM84A\MONA;Initial Catalog=ITI_System-Two;Integrated Security=True") { }
         //public DataContext() : base(@"Data Source=DESKTOP-5I5TGDJ;Initial Catalog=ITI_System;Integrated Security=True") { }
 
 
@@ -29,7 +28,7 @@ namespace ITI_System
         //mona
        // public DataContext() : base(@"Data Source=DESKTOP-JPHM84A\MONA;Initial Catalog=ITI_System-Two;Integrated Security=True") { }
 
->>>>>>> 12b0b0bf55736931e370abd75430159edfcd9e03
+//>>>>>>> 12b0b0bf55736931e370abd75430159edfcd9e03
 
         //Managment
         public virtual DbSet<Instructor> Instructor { get; set; }

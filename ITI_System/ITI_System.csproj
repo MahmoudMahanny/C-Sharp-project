@@ -125,6 +125,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Management\Forms\InstructorCourseLab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Management\Forms\IntackForm.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -203,6 +207,9 @@
     </Compile>
     <Compile Include="Management\Forms\frmProgram.xaml.cs">
       <DependentUpon>frmProgram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Forms\InstructorCourseLab.xaml.cs">
+      <DependentUpon>InstructorCourseLab.xaml</DependentUpon>
     </Compile>
     <Compile Include="Management\Forms\IntackForm.xaml.cs">
       <DependentUpon>IntackForm.xaml</DependentUpon>

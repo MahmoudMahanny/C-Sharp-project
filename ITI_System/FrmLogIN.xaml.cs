@@ -91,5 +91,11 @@ namespace ITI_System.Management.Forms
         {
 
         }
+
+        private void btnAddInsCrsLab_Click(object sender, RoutedEventArgs e)
+        {
+            InstructorCourseLab inscrslab = new InstructorCourseLab();
+            inscrslab.ShowDialog();
+        }
     }
 }
