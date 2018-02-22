@@ -245,6 +245,10 @@
     <Compile Include="Management\Services\InstructorServices.cs" />
     <Compile Include="Management\Services\Intak_Services.cs" />
     <Compile Include="Management\Services\TraineeServices.cs" />
+    <Compile Include="Migrations\201802210049521_management.cs" />
+    <Compile Include="Migrations\201802210049521_management.Designer.cs">
+      <DependentUpon>201802210049521_management.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -259,6 +263,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\201802210049521_management.resx">
+      <DependentUpon>201802210049521_management.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

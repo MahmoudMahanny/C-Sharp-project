@@ -365,3 +365,10 @@ C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\Management\Fo
 >>>>>>> 48f1c58a64f3f40b0940d94817b5dee34c60743c
 E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\InstructorCourseLab.g.cs
 E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\InstructorCourseLab.baml
+C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmAddCourses.g.cs
+C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmCourses.g.cs
+C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\InstructorCourseLab.g.cs
+C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmAddCourses.baml
+C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmCourses.baml
+C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\InstructorCourseLab.baml
+C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\ITI_System.Migrations.management.resources

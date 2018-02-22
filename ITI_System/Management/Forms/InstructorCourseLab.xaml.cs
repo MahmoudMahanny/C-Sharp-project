@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -68,9 +69,38 @@ namespace ITI_System.Management.Forms
 
         private void BtnAddInsCrsLab_Click(object sender, RoutedEventArgs e)
         {
-            var query = (from icl in context.InstructorCourseLab
-                        select icl).FirstOrDefault();
-            InstructorCourseLab icl2 = new InstructorCourseLab();
+            using (SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-RFITCSA\MSSQLSERVER01; Initial Catalog=ITI_System; Integrated Security=True"))
+            {
+                try
+                {
+                    using (var cmd = new SqlCommand("INSERT INTO InstructorCourseLab (InstID,CourseID,LabID) VALUES (@InstID,@CourseID,@LabID)"))
+                    {
+                        cmd.Connection = con;
+                        cmd.Parameters.AddWithValue("@InstID", (CBInstructor.SelectedItem.ToString()));
+                        cmd.Parameters.AddWithValue("@CourseID", (CBCourse.SelectedItem.ToString()));
+                        cmd.Parameters.AddWithValue("@LabID", (CBLab.SelectedItem.ToString()));
+                        con.Open();
+                        if (cmd.ExecuteNonQuery() > 0)
+                        {
+                            MessageBox.Show("Done");
+                        }
+                        else
+                        {
+                            MessageBox.Show("No");
+                        }
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            //var query = (from icl in context.InstructorCourseLab
+            //            select icl).FirstOrDefault();
+            //InstructorCourseLab I = new InstructorCourseLab();
+
+            //icl. = CBInstructor.SelectedItem;
             //icl2.Name = CBInstructor.SelectedValue.ToString();
             //string abc = CBInstructor.SelectedValue.ToString();
             //query.ID = int.Parse(CBInstructor.SelectedValue.ToString());
