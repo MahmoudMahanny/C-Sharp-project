@@ -1,5 +1,6 @@
 ﻿using ITI_System.Management.Forms;
 using ITI_System.Management.OtherForms;
+using ITI_System.Management.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,13 +22,11 @@ namespace ITI_System.Management.Forms
     /// </summary>
     public partial class FrmLogIN : Window
     {
-        DataContext context = new DataContext();
+        LogInServices LogSer = new LogInServices();
         public FrmLogIN()
         {
             InitializeComponent();
-            Account a = new Account() { UserName = "admin", Password = "admin", AccountType = "Manager" };
-            context.Account.Add(a);
-            context.SaveChanges();
+           
         }
         
         private void button_Copy_Click(object sender, RoutedEventArgs e)
@@ -35,56 +34,11 @@ namespace ITI_System.Management.Forms
             this.Close();
         }
 
-        private void Clear()
-        {
-            txtUserName.Text = "";
-            txtpasswordBox.Password = "";
-        }
+       
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            var userName = txtUserName.Text;
-            var password = txtpasswordBox.Password;
-            var AccountType = "";
-            bool flag = false;
-            foreach (var account in context.Account)
-            {
-                if (userName == account.UserName && password == account.Password)
-                {
-                    flag = true;
-                    AccountType = account.AccountType;
-                    break;
-                }
-            }
-
-            if (flag == false)
-            {
-                Clear();
-                MessageBox.Show("Invlaid Username or Password");
-            }
-            else if(flag == true && AccountType == "Manager")
-            {
-                FrmManager frm = new FrmManager();
-                Clear();
-                frm.ShowDialog();
-            }
-            else if (flag == true && AccountType == "Trainee")
-            {
-                FrmTrainee T = new FrmTrainee();
-                Clear();
-                T.ShowDialog();
-            }
-            else if (flag == true && AccountType == "Instructor")
-            {
-                frmInstructor i = new frmInstructor();
-                Clear();
-                i.ShowDialog();
-            }
-            else if (flag == true && AccountType == "Attendance")
-            {
-                frmAttendanceEmp A = new frmAttendanceEmp();
-                Clear();
-                A.ShowDialog();
-            }
+            LogSer.LogIN(this);
+            
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

@@ -10,7 +10,7 @@ namespace ITI_System.Management.Services
     class TraineeServices
     {
         DataContext context = new DataContext();
-        public void AddTrainee(TraineeForm t)
+        public void AddTrainee(TraineeForm t,int LabID)
         {
 
             if (t.txtTraineeName.Text == "")
@@ -30,10 +30,12 @@ namespace ITI_System.Management.Services
                 }
                 Trainee trainee = new Trainee()
                 {
+
                     Name = t.txtTraineeName.Text,
                     Qualification = t.txtTraineeQualification.Text,
                     MilitaryStatus = t.txtTraineeMilitaryStatus.Text,
-                    Gender = gen
+                    Gender = gen,
+                    LabID = LabID
                 };
 
                 context.Trainee.Add(trainee);

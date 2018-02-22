@@ -30,15 +30,16 @@
             
         </Grid.RowDefinitions>
         
-        <WrapPanel Grid.Row="0"  Background="PowderBlue" Margin="0,0,10,369" >
+        <WrapPanel Grid.Row="0"  Background="PowderBlue" Margin="0,2,10,264" >
             <Button Width="120" Click="Button_Click">Programme</Button>
             <Button Width="120" Click="Button_Click_1">Intake</Button>
             <Button Width="120" Click="Button_Click_2">Track</Button>
             <Button Width="120" Click="Button_Click_5">Course</Button>
             <Button Width="120" Click="Button_Click_4">Instructor</Button>
             <Button Width="120" Click="Button_Click_3">Trainee</Button>
-            
-
+            <Button Width="120" Click="Button_Click_6">Lab</Button>
+            <Button x:Name="btn" Width="120" Click="Button_Click_7" >Account</Button>
+            <TextBox x:Name="txtAccountID"  Width="120" ></TextBox>
         </WrapPanel>
     </Grid>
 </Window>

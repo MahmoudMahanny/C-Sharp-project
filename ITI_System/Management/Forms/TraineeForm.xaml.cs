@@ -22,9 +22,23 @@ namespace ITI_System.Management
     {
         DataContext context = new DataContext();
         TraineeServices TrnSer = new TraineeServices();
+        int LabID;
+
         public TraineeForm()
         {
             InitializeComponent();
+
+            var Labs = from L in context.Lab
+                       select L;
+
+            foreach (var item in Labs)
+            {
+                CmbTraineeLab.DisplayMemberPath = "Name";
+                CmbTraineeLab.SelectedValuePath = "ID";
+                CmbTraineeLab.SelectedIndex = 0;
+                CmbTraineeLab.Items.Add(item);
+            }
+            
         }
         public TraineeForm(int ID)
         {
@@ -60,9 +74,13 @@ namespace ITI_System.Management
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-            TrnSer.AddTrainee(this);
+            TrnSer.AddTrainee(this,LabID);
             this.Close();
             
+        }
+        private void CmbTraineeLab_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            LabID = int.Parse(CmbTraineeLab.SelectedValue.ToString());
         }
     }
 }

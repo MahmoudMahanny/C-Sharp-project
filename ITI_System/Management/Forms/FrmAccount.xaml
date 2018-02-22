@@ -9,7 +9,7 @@
     <Grid Background="Green" Margin="0,0,2,0">
         <Label Width="143"  Height="50" Foreground="white"  FontSize="25" FontWeight="Bold" x:Name="lbluserName" Content="User Name" HorizontalAlignment="Left" Margin="58,55,0,0" VerticalAlignment="Top" />
         <TextBox Foreground="Green"  FontSize="25" FontWeight="Bold" x:Name="txtUserName" HorizontalAlignment="Left" Height="39" Margin="237,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="374"/>
-        <Button x:Name="button" HorizontalAlignment="Left" Margin="216,265,0,0" VerticalAlignment="Top" Width="120" Height="43" Click="button_Click">
+        <Button x:Name="button" HorizontalAlignment="Left" Margin="216,265,0,0" VerticalAlignment="Top" Width="136" Height="43" Click="button_Click">
             <Image x:Name="___ITI_System_component_Apply_32x32_png" Height="32" Source="../PIC/Apply_32x32.png" Stretch="Fill" Width="54"/>
         </Button>
         <Button x:Name="button_Copy" HorizontalAlignment="Left" Margin="411,265,0,0" VerticalAlignment="Top" Width="120" Height="43" Click="button_Copy_Click">

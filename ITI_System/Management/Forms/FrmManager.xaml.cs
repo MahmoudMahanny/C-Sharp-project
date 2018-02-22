@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ITI_System.Management.Forms;
 
 namespace ITI_System.Management
 {
@@ -26,7 +27,7 @@ namespace ITI_System.Management
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            frmProgram pro = new frmProgram();
+            frmProgram pro = new ITI_System.frmProgram();
             pro.ShowDialog();
         }
 
@@ -58,6 +59,20 @@ namespace ITI_System.Management
         {
             FrmCourses C = new FrmCourses();
             C.ShowDialog();
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            FrmLabs lab = new FrmLabs();
+            lab.ShowDialog();
+
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            FrmAccount acc = new FrmAccount();
+
+            acc.ShowDialog();
         }
     }
 }

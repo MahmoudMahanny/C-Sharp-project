@@ -16,25 +16,29 @@ using System.Windows.Shapes;
 namespace ITI_System.Management.Forms
 {
     /// <summary>
-    /// Interaction logic for FrmAccount.xaml
+    /// Interaction logic for FrmLabs.xaml
     /// </summary>
-    public partial class FrmAccount : Window
+    public partial class FrmLabs : Window
     {
-        AccountServices ACC = new AccountServices();
-        public FrmAccount()
+        LabServices LabServices = new LabServices();
+        
+        int LabID;
+        public FrmLabs()
         {
             InitializeComponent();
+            LabServices.FillCombo(this);
         }
 
-        private void button_Copy_Click(object sender, RoutedEventArgs e)
+        private void CmBoxLab_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            this.Close();
+            LabID = int.Parse(CmBoxLab.SelectedValue.ToString());
+            LabServices.FillGrid(this,LabID);
+
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            ACC.AddAcount(this);
-            
+
         }
     }
 }

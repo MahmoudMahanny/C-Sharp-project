@@ -76,11 +76,7 @@
                 <RadioButton x:Name="rbtnTraineeFemale">Female</RadioButton>
                 <RadioButton x:Name="rBtnTraineeMale">Male</RadioButton>
             </WrapPanel>
-            <ComboBox x:Name="CmbTraineeLab"  Grid.Row="5" Grid.Column="1" >
-                <ComboBoxItem>lab1</ComboBoxItem>
-                <ComboBoxItem>lab2</ComboBoxItem>
-                <ComboBoxItem>lab3</ComboBoxItem>
-                <ComboBoxItem>lab4</ComboBoxItem>
+            <ComboBox x:Name="CmbTraineeLab"  Grid.Row="5" Grid.Column="1" SelectionChanged="CmbTraineeLab_SelectionChanged" >
 
             </ComboBox>
             <TextBox x:Name="txtTraineeMilitaryStatus"   Grid.Row="3" HorizontalAlignment="Center" Height="23" Margin="10,10,10,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="273" Grid.ColumnSpan="1" Grid.Column="1"/>
