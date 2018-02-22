@@ -348,6 +348,10 @@ E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\ITI_System
 E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\ITI_System.csproj.GenerateResource.Cache
 >>>>>>> b53e144bc1d9fddabf4b9be8c56b74da9821e8aa
 >>>>>>> 581d31999d11a963792f8e17234a5a5de5a378f7
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmAddCourses.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmCourses.g.cs
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmAddCourses.baml
+C:\Users\mahmoud hassan\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmCourses.baml
 >>>>>>> 75166763920efb4cfc7e55da589021cdda84b55d
 D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmAddCourses.g.cs
 D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmCourses.g.cs
@@ -355,7 +359,23 @@ D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmAddCo
 D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmCourses.baml
 C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\Management\Forms\FrmAddCourses.g.cs
 C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\Management\Forms\FrmCourses.g.cs
+<<<<<<< HEAD
 D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\Labs.g.cs
 D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\Labs.baml
 D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmLabs.g.cs
 D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmLabs.baml
+=======
+C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\Management\Forms\FrmAddCourses.baml
+C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\Management\Forms\FrmCourses.baml
+>>>>>>> 12b0b0bf55736931e370abd75430159edfcd9e03
+>>>>>>> 48f1c58a64f3f40b0940d94817b5dee34c60743c
+E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\InstructorCourseLab.g.cs
+E:\itiiiiiiii\project c# mahmoud\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\InstructorCourseLab.baml
+C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmAddCourses.g.cs
+C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmCourses.g.cs
+C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\InstructorCourseLab.g.cs
+C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmAddCourses.baml
+C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmCourses.baml
+C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\InstructorCourseLab.baml
+C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\ITI_System.Migrations.management.resources
+>>>>>>> 7fbaa7438201bf3aa0ed8400c9872cc76fce6dd7

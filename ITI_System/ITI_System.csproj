@@ -129,6 +129,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Management\Forms\InstructorCourseLab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Management\Forms\IntackForm.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -211,6 +215,9 @@
     <Compile Include="Management\Forms\frmProgram.xaml.cs">
       <DependentUpon>frmProgram.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Management\Forms\InstructorCourseLab.xaml.cs">
+      <DependentUpon>InstructorCourseLab.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Management\Forms\IntackForm.xaml.cs">
       <DependentUpon>IntackForm.xaml</DependentUpon>
     </Compile>
@@ -248,6 +255,10 @@
     <Compile Include="Management\Services\LabServices.cs" />
     <Compile Include="Management\Services\LogInServices.cs" />
     <Compile Include="Management\Services\TraineeServices.cs" />
+    <Compile Include="Migrations\201802210049521_management.cs" />
+    <Compile Include="Migrations\201802210049521_management.Designer.cs">
+      <DependentUpon>201802210049521_management.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -262,6 +273,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\201802210049521_management.resx">
+      <DependentUpon>201802210049521_management.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

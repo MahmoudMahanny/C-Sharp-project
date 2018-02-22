@@ -86,7 +86,8 @@ namespace ITI_System.Management
             
         }
 
-        private void btnEixt_Click(object sender, RoutedEventArgs e)
+        private void
+            btnEixt_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }

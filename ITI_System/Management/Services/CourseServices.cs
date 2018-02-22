@@ -12,7 +12,7 @@ namespace ITI_System.Management
     {
         DataContext Context = new DataContext();
         // FrmCourses FrmCourses = new FrmCourses();
-        FrmAddCourses FrmAddCourses;
+       // FrmAddCourses FrmAddCourses;
 
         public void updatecourse (FrmAddCourses F)
         {

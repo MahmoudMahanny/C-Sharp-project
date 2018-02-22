@@ -4,17 +4,30 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\
+=======
+C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\
+>>>>>>> 7fbaa7438201bf3aa0ed8400c9872cc76fce6dd7
 ITI_System
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 D:\ITI\c# project\C-Sharp-project\ITI_System\App.xaml
 20-892118644
 
 66-317033145
 16-59674078
 MainWindow.xaml;Management\Forms\AddIns.xaml;Management\Forms\FrmAccount.xaml;FrmLogIN.xaml;Management\Forms\FrmAddCourses.xaml;Management\Forms\frmAddProgram.xaml;Management\Forms\FrmCourses.xaml;Management\Forms\FrmLabs.xaml;Management\Forms\FrmManager.xaml;Management\Forms\frmProgram.xaml;Management\Forms\IntackForm.xaml;Management\Forms\IntackModification.xaml;Management\Forms\TrackForm.xaml;Management\Forms\TrackModification.xaml;Management\Forms\TraineeForm.xaml;Management\Forms\TraineeList.xaml;Management\Forms\WPF1.xaml;Management\OtherForms\frmAttendanceEmp.xaml;Management\OtherForms\frmInstructor.xaml;Management\OtherForms\FrmTrainee.xaml;
+=======
+C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\App.xaml
+20-1122029115
 
-True
+65-845585960
+16-1664576129
+MainWindow.xaml;Management\Forms\AddIns.xaml;Management\Forms\FrmAccount.xaml;FrmLogIN.xaml;Management\Forms\FrmAddCourses.xaml;Management\Forms\frmAddProgram.xaml;Management\Forms\FrmCourses.xaml;Management\Forms\FrmManager.xaml;Management\Forms\frmProgram.xaml;Management\Forms\InstructorCourseLab.xaml;Management\Forms\IntackForm.xaml;Management\Forms\IntackModification.xaml;Management\Forms\TrackForm.xaml;Management\Forms\TrackModification.xaml;Management\Forms\TraineeForm.xaml;Management\Forms\TraineeList.xaml;Management\Forms\WPF1.xaml;Management\OtherForms\frmAttendanceEmp.xaml;Management\OtherForms\frmInstructor.xaml;Management\OtherForms\FrmTrainee.xaml;
+>>>>>>> 7fbaa7438201bf3aa0ed8400c9872cc76fce6dd7
+
+False
 

@@ -1,0 +1,17 @@
+﻿<Window x:Class="ITI_System.Management.Forms.InstructorCourseLab"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ITI_System.Management.Forms"
+        mc:Ignorable="d"
+        Title="InstructorCourseLab" Height="300" Width="500">
+    <Grid>
+        <ComboBox x:Name="CBInstructor" HorizontalAlignment="Left" Margin="25,32,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CBInstructor_SelectionChanged"/>
+        <ComboBox x:Name="CBCourse" HorizontalAlignment="Left" Margin="185,32,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="CBLab" HorizontalAlignment="Left" Margin="338,32,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="BtnAddInsCrsLab" Content="Button" HorizontalAlignment="Left" Margin="200,77,0,0" VerticalAlignment="Top" Width="82" Click="BtnAddInsCrsLab_Click"/>
+        <DataGrid x:Name="DG1" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top" Height="142" Width="472"/>
+         
+    </Grid>
+</Window>

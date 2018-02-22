@@ -26,7 +26,13 @@ namespace ITI_System.Management.Forms
         public FrmLogIN()
         {
             InitializeComponent();
+<<<<<<< HEAD
            
+=======
+            //Account a = new Account() { UserName = "admin", Password = "admin", AccountType = "Manager" };
+            //context.Account.Add(a);
+            //context.SaveChanges();
+>>>>>>> 7fbaa7438201bf3aa0ed8400c9872cc76fce6dd7
         }
         
         private void button_Copy_Click(object sender, RoutedEventArgs e)
@@ -44,6 +50,12 @@ namespace ITI_System.Management.Forms
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void btnAddInsCrsLab_Click(object sender, RoutedEventArgs e)
+        {
+            InstructorCourseLab inscrslab = new InstructorCourseLab();
+            inscrslab.ShowDialog();
         }
     }
 }

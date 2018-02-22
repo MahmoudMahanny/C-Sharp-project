@@ -43,16 +43,7 @@ namespace ITI_System
             //txtInstrPhone.Text = ins.phone;
 
         }
-    
-        private bool IsAllLetters(string s)
-        {
-            foreach (char c in s)
-            {
-                if (!Char.IsLetter(c))
-                    return false;
-            }
-            return true;
-        }
+
         //private void Button_Click(object sender, RoutedEventArgs e)
         //{
 
@@ -62,106 +53,15 @@ namespace ITI_System
         {
             if (this.Name == "frmAdd")
             {
-
-
-                if (txtInstrName.Text == "")
-                {
-                    MessageBox.Show("Please,Enter Instructor's Number");
-                }
-                else if (!IsAllLetters(txtInstrName.Text))
-                {
-                    MessageBox.Show("Please, Enter Letters Only");
-                }
-                else
-                {
-                    string g;
-                    if (rbInstrGenderFM.IsChecked == true)
-                    {
-                        g = "Female";
-                    }
-                    else
-                    {
-                        g = "Male";
-                    }
-                    bool m;
-                    if (rbInstrIsMngrYes.IsChecked == true)
-                    {
-                        m = true;
-                    }
-                    else
-                    {
-                        m = false;
-                    }
-                    var ins = new Instructor
-                    {
-                        Name = txtInstrName.Text,
-                        Gender = g,
-                        Birthdate = dpInstrBDate.SelectedDate.Value,
-                        Email = txtInstrEmail.Text,
-                       // phone = txtInstrPhone.Text,
-                       // address = txtInstrAddress.Text,
-                        IsManager = m
-                        //accountID = int.Parse(txtInstrAccountID.Text)
-                    };
-
-                    context.Instructor.Add(ins);
-                    context.SaveChanges();
-                    MessageBox.Show("Successfully Added");
-                }
+                Services.AddInstructor(this);
+                this.Close();
             }
             else if (this.Name == "frmUpdate")
             {
-                if (txtInstrName.Text == "")
-                {
-                    MessageBox.Show("Please,Enter Name");
-                }
-                else if (!IsAllLetters(txtInstrName.Text))
-                {
-                    MessageBox.Show("Please, Enter Letters Only");
-
-                }
-                else
-                {
-                    string g;
-                    if (rbInstrGenderFM.IsChecked == true)
-                    {
-                        g = "Female";
-                    }
-                    else
-                    {
-                        g = "male";
-                    }
-                    bool m;
-                    if (rbInstrIsMngrYes.IsChecked == true)
-                    {
-                        m = true;
-                    }
-                    else
-                    {
-                        m = false;
-                    }
-                    int ID = int.Parse(txtInstrID.Text);
-                    var ins =
-                    (from I in context.Instructor
-                     where I.ID == ID
-                     select I).FirstOrDefault();
-
-                    ins.ID = int.Parse(txtInstrID.Text);
-                    ins.Name = txtInstrName.Text;
-                    ins.Gender = g;
-                    //ins.birthdate = dpInstrBDate.SelectedDate.Value;
-                    ins.Email = txtInstrEmail.Text;
-                  //  ins.phone = txtInstrPhone.Text;
-                  //  ins.address = txtInstrAddress.Text;
-                    ins.IsManager = m;
-                    //accountID = int.Parse(txtInstrAccountID.Text)
-                }
-                context.SaveChanges();
-
-                MessageBox.Show("Successfully Edited");
+                Services.updateInstructor(this);
+                this.Close();
             }
         }
-    
         
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
