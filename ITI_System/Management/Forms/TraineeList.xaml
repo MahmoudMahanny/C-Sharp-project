@@ -11,14 +11,13 @@
             
             <WrapPanel  Height="80" Margin="10,-71,0,0" x:Name="toolBar" VerticalAlignment="Top" RenderTransformOrigin="0.497,1.846"  HorizontalAlignment="Left" Width="305" Grid.ColumnSpan="2" Grid.RowSpan="2" >
 
-<<<<<<< HEAD
+<!--<<<<<<< HEAD-->
                 <StackPanel>
                     <Button    x:Name="btnAdd"  Click="btnAdd_Click">
-=======
+<!--=======-->
                 <StackPanel Height="55">
-                    <Button    x:Name="btnAdd"  Click="btnAdd_Click"
-                               >
->>>>>>> 7fbaa7438201bf3aa0ed8400c9872cc76fce6dd7
+                    <Button    x:Name="btnAdd"  Click="btnAdd_Click">
+<!-->>>>>>> 7fbaa7438201bf3aa0ed8400c9872cc76fce6dd7-->
 
                         <Image Source="..\PIC\if_Add-Male-User_49576.png" Height="49"></Image>
 

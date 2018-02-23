@@ -20,7 +20,7 @@
             </ToolBar>
 
         </StackPanel>
-        <StackPanel Margin="0,-146,0,-6">
+        <StackPanel Margin="228,-146,0,48">
             <WrapPanel Margin="3">
                 <Label x:Name="lbInstrID" Content="ID :"/>
                 <TextBox x:Name="txtInstrID" Width="200"/>
@@ -61,5 +61,13 @@
             </WrapPanel>
         </StackPanel>
 
+
+
+        <StackPanel Margin="0,-317,269,395">
+            <Label x:Name="label" Content="Username:" FontSize="14" Height="33" Margin="0,0,116,0"/>
+            <TextBox x:Name="txtUsername" Height="23" TextWrapping="Wrap" Margin="75,-30,10,0" IsEnabled="False"/>
+            <Button x:Name="button" Height="26" Margin="114,20,12,0" Content="Account"/>
+            <TextBox x:Name="txtAccountID" Height="26" TextWrapping="Wrap" Margin="7,-30,116,0" IsEnabled="False"/>
+        </StackPanel>
     </UniformGrid>
 </Window>

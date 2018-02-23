@@ -359,12 +359,10 @@ D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmAddCo
 D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmCourses.baml
 C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\Management\Forms\FrmAddCourses.g.cs
 C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\Management\Forms\FrmCourses.g.cs
-<<<<<<< HEAD
 D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\Labs.g.cs
 D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\Labs.baml
 D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmLabs.g.cs
 D:\ITI\c# project\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmLabs.baml
-=======
 C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\Management\Forms\FrmAddCourses.baml
 C:\Users\Al-ariny\Desktop\C-Sharp-project11-2\ITI_System\obj\Debug\Management\Forms\FrmCourses.baml
 >>>>>>> 12b0b0bf55736931e370abd75430159edfcd9e03
@@ -379,3 +377,4 @@ C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\Managemen
 C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\InstructorCourseLab.baml
 C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\ITI_System.Migrations.management.resources
 >>>>>>> 7fbaa7438201bf3aa0ed8400c9872cc76fce6dd7
+C:\Users\Electronica CARE\Desktop\C-Sharp-project\ITI_System\obj\Debug\Management\Forms\FrmLabs.g.cs

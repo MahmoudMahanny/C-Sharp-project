@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -51,10 +52,18 @@ namespace ITI_System.Management.Forms
                 CBLab.Items.Add(item);
             }
 
-            var query = (from Inss in context.Instructor
-                         select Inss).ToList();
-               
-            DG1.ItemsSource = query;
+            //var query = (from Inss in context.Instructor
+            //             select Inss).ToList();
+
+            //DG1.ItemsSource = query;
+            using (SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-RFITCSA\MSSQLSERVER01;Initial Catalog=ITI_System;Integrated Security=True"))
+            {
+                SqlCommand cmd = new SqlCommand("SELECT * from InstructorCourseLabs", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DG1.ItemsSource = dt.DefaultView;
+            }
         }
 
         private void CBInstructor_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -76,9 +85,9 @@ namespace ITI_System.Management.Forms
                     using (var cmd = new SqlCommand("INSERT INTO InstructorCourseLab (InstID,CourseID,LabID) VALUES (@InstID,@CourseID,@LabID)"))
                     {
                         cmd.Connection = con;
-                        cmd.Parameters.AddWithValue("@InstID", (CBInstructor.SelectedItem.ToString()));
-                        cmd.Parameters.AddWithValue("@CourseID", (CBCourse.SelectedItem.ToString()));
-                        cmd.Parameters.AddWithValue("@LabID", (CBLab.SelectedItem.ToString()));
+                        cmd.Parameters.AddWithValue("@InstID", (int.Parse(CBInstructor.SelectedValue.ToString())));
+                        cmd.Parameters.AddWithValue("@CourseID", (int.Parse(CBCourse.SelectedValue.ToString())));
+                        cmd.Parameters.AddWithValue("@LabID", (int.Parse(CBLab.SelectedValue.ToString())));
                         con.Open();
                         if (cmd.ExecuteNonQuery() > 0)
                         {
@@ -96,19 +105,7 @@ namespace ITI_System.Management.Forms
                     MessageBox.Show(ex.Message);
                 }
             }
-            //var query = (from icl in context.InstructorCourseLab
-            //            select icl).FirstOrDefault();
-            //InstructorCourseLab I = new InstructorCourseLab();
-
-            //icl. = CBInstructor.SelectedItem;
-            //icl2.Name = CBInstructor.SelectedValue.ToString();
-            //string abc = CBInstructor.SelectedValue.ToString();
-            //query.ID = int.Parse(CBInstructor.SelectedValue.ToString());
-            //context.InstructorCourseLab.Add(query);
-            //context.InstructorCourseLab.Add(icl2);
-            //context.SaveChanges();
-            //query.Instructor =/*(Instructor)*/CBInstructor.SelectedIndex.ToString();
-
+           
 
         }
     }
