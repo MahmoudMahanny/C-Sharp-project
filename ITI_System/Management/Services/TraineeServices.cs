@@ -82,21 +82,21 @@ namespace ITI_System.Management.Services
 
             }
         }
-        public void DeleteTrainee(TraineeList t)
-        {
+        //public void DeleteTrainee(TraineeList t)
+        //{
 
-            int ID = int.Parse(t.lstTrainee.SelectedValue.ToString());
+        //    int ID = int.Parse(t.lstTrainee.SelectedValue.ToString());
 
-            Trainee tr = (from tre in context.Trainee
-                          where tre.ID == ID
-                          select tre).FirstOrDefault();
-            context.Trainee.Remove(tr);
-            context.SaveChanges();
-            MessageBox.Show("Sucsesfuly delete");
-            t.lstTrainee.DisplayMemberPath = "Name";
-            t.lstTrainee.SelectedValuePath = "ID";
-            t.lstTrainee.ItemsSource = context.Trainee.ToList();
-        }
+        //    Trainee tr = (from tre in context.Trainee
+        //                  where tre.ID == ID
+        //                  select tre).FirstOrDefault();
+        //    context.Trainee.Remove(tr);
+        //    context.SaveChanges();
+        //    MessageBox.Show("Sucsesfuly delete");
+        //    t.lstTrainee.DisplayMemberPath = "Name";
+        //    t.lstTrainee.SelectedValuePath = "ID";
+        //    t.lstTrainee.ItemsSource = context.Trainee.ToList();
+        //}
 
         private bool IsAllLetters(string s)
         {
@@ -110,25 +110,25 @@ namespace ITI_System.Management.Services
         
         public void FillTraineeList(TraineeForm tr)
         {
-            TraineeList t = new TraineeList();
-            t.lstTrainee.DisplayMemberPath = "Name";
-            t.lstTrainee.SelectedValuePath = "ID";
-           t.lstTrainee.ItemsSource = context.Trainee.ToList();
+           // TraineeList t = new TraineeList();
+           // t.lstTrainee.DisplayMemberPath = "Name";
+           // t.lstTrainee.SelectedValuePath = "ID";
+           //t.lstTrainee.ItemsSource = context.Trainee.ToList();
         }
 
-        public void ButtonAdd(TraineeList tr)
-        {
-            if (tr.lstTrainee.SelectedIndex < 0)
-            {
-                return;
-            }
-            else if (tr.lstTrainee.SelectedIndex > 0)
-            {
-                int ID = int.Parse(tr.lstTrainee.SelectedValue.ToString());
-                TraineeForm tf = new TraineeForm(ID);
-                tf.btnSave.Visibility = Visibility.Hidden;
-                tf.ShowDialog();
-            }
-        }
+        //public void ButtonAdd(TraineeList tr)
+        //{
+        //    if (tr.lstTrainee.SelectedIndex < 0)
+        //    {
+        //        return;
+        //    }
+        //    else if (tr.lstTrainee.SelectedIndex > 0)
+        //    {
+        //        int ID = int.Parse(tr.lstTrainee.SelectedValue.ToString());
+        //        TraineeForm tf = new TraineeForm(ID);
+        //        tf.btnSave.Visibility = Visibility.Hidden;
+        //        tf.ShowDialog();
+        //    }
+        //}
     }
 }
