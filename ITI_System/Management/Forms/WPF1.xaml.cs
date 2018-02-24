@@ -112,22 +112,30 @@ namespace ITI_System
 
         private void btnDeleteIns_Click(object sender, RoutedEventArgs e)
         {
-
-            int ID = int.Parse(lboxinstructor.SelectedValue.ToString());
-            var ins =
-                (from I in context.Instructor
-                 where I.ID == ID
-                 select I).FirstOrDefault();
-            MessageBoxResult Result = MessageBox.Show("DELETE instructor, Are you Sure ?", "DELETE", MessageBoxButton.YesNo);
-            if (Result == MessageBoxResult.Yes)
-            {
-                context.Instructor.Remove(ins);
-                context.SaveChanges();
-                MessageBox.Show("Deleted!");
-            }
-            else if (Result == MessageBoxResult.No)
+            if (lboxinstructor.SelectedIndex < 0)
             {
                 return;
+            }
+            else if (lboxinstructor.SelectedIndex > 0)
+            {
+
+
+                int ID = int.Parse(lboxinstructor.SelectedValue.ToString());
+                var ins =
+                    (from I in context.Instructor
+                     where I.ID == ID
+                     select I).FirstOrDefault();
+                MessageBoxResult Result = MessageBox.Show("DELETE instructor, Are you Sure ?", "DELETE", MessageBoxButton.YesNo);
+                if (Result == MessageBoxResult.Yes)
+                {
+                    context.Instructor.Remove(ins);
+                    context.SaveChanges();
+                    MessageBox.Show("Deleted!");
+                }
+                else if (Result == MessageBoxResult.No)
+                {
+                    return;
+                }
             }
         }
 
