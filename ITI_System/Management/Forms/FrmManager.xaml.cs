@@ -45,8 +45,8 @@ namespace ITI_System.Management
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            TraineeList t = new TraineeList();
-            t.ShowDialog();
+            //TraineeList t = new TraineeList();
+            //t.ShowDialog();
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)

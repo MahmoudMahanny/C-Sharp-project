@@ -153,10 +153,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Management\Forms\TraineeList.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Management\Forms\WPF1.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -232,9 +228,6 @@
     </Compile>
     <Compile Include="Management\Forms\TraineeForm.xaml.cs">
       <DependentUpon>TraineeForm.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Management\Forms\TraineeList.xaml.cs">
-      <DependentUpon>TraineeList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Management\Forms\WPF1.xaml.cs">
       <DependentUpon>WPF1.xaml</DependentUpon>
