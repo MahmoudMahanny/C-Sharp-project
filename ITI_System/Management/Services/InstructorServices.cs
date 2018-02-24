@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -14,8 +15,56 @@ namespace ITI_System.Management.Services
         {
             if (a.txtInstrName.Text == "")
             {
-                MessageBox.Show("Please,Enter Instructor's Number");
+                MessageBox.Show("Please Enter Instructor's Name");
+                Clear(a);
             }
+            else if (!IsAllLetters(a.txtInstrName.Text))
+            {
+                MessageBox.Show("Invalid Name, Enter Letters Only");
+                Clear(a);
+            }
+            if (a.rbInstrGenderFM.IsChecked == false && a.rbInstrGenderM.IsChecked == false)
+            {
+                MessageBox.Show("Select Instructor's Gender");
+                Clear(a);
+            }
+            if (a.dpInstrBDate.SelectedDate.Value == null)
+            {
+                MessageBox.Show("Choose a Birthdate");
+                Clear(a);
+            }
+            if (a.txtInstrEmail.Text == "")
+            {
+                MessageBox.Show("Enter Email Address");
+                Clear(a);
+            }
+            else if (!IsValidEmail(a.txtInstrEmail.Text))
+            {
+                MessageBox.Show("Invalid Email Address");
+                Clear(a);
+            }
+
+            if (a.txtInstrPhone.Text == "")
+            {
+                MessageBox.Show("Enter Phone number");
+                Clear(a);
+            }
+            else if (!IsvalidPhone(a.txtInstrPhone.Text))
+            {
+                MessageBox.Show("Invalid Phone Number");
+                Clear(a);
+            }
+            if (a.txtInstrAddress.Text == "")
+            {
+                MessageBox.Show("Enter Address");
+                Clear(a);
+            }
+            if (a.rbInstrIsMngrNo.IsChecked == false && a.rbInstrIsMngrYes.IsChecked == false)
+            {
+                MessageBox.Show("Is Manager Or Not?");
+                Clear(a);
+            }
+
             else
             {
                 string g;
@@ -58,13 +107,56 @@ namespace ITI_System.Management.Services
         {
             if (a.txtInstrName.Text == "")
             {
-                MessageBox.Show("Please,Enter Name");
+                MessageBox.Show("Please Enter Instructor's Name");
+                Clear(a);
             }
             else if (!IsAllLetters(a.txtInstrName.Text))
             {
-                MessageBox.Show("Please, Enter Letters Only");
-
+                MessageBox.Show("Invalid Name, Enter Letters Only");
+                Clear(a);
             }
+            if (a.rbInstrGenderFM.IsChecked == false && a.rbInstrGenderM.IsChecked == false)
+            {
+                MessageBox.Show("Select Instructor's Gender");
+                Clear(a);
+            }
+            if (a.dpInstrBDate.SelectedDate.Value == null)
+            {
+                MessageBox.Show("Choose a Birthdate");
+                Clear(a);
+            }
+            if (a.txtInstrEmail.Text == "")
+            {
+                MessageBox.Show("Enter Email Address");
+                Clear(a);
+            }
+            else if (!IsValidEmail(a.txtInstrEmail.Text))
+            {
+                MessageBox.Show("Invalid Email Address");
+                Clear(a);
+            }
+
+            if (a.txtInstrPhone.Text == "")
+            {
+                MessageBox.Show("Enter Phone number");
+                Clear(a);
+            }
+            else if (!IsvalidPhone(a.txtInstrPhone.Text))
+            {
+                MessageBox.Show("Invalid Phone Number");
+                Clear(a);
+            }
+            if (a.txtInstrAddress.Text == "")
+            {
+                MessageBox.Show("Enter Address");
+                Clear(a);
+            }
+            if (a.rbInstrIsMngrNo.IsChecked == false && a.rbInstrIsMngrYes.IsChecked == false)
+            {
+                MessageBox.Show("Is Manager Or Not?");
+                Clear(a);
+            }
+
             else
             {
                 string g;
@@ -162,6 +254,30 @@ namespace ITI_System.Management.Services
                     return false;
             }
             return true;
+        }
+        public bool IsValidEmail(string email)
+        {
+            if (!Regex.IsMatch(email, @"/^[\x20-\x7E]+$/"))
+            {
+                if (Regex.IsMatch(email, @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"))
+                    return true;
+                else
+                    return false;
+            }
+            //MessageBox.Show("E-mail must be in English");
+            return false;
+        }
+        public bool IsvalidPhone(string phone)
+        {
+            Regex phoneNumpattern = new Regex(@"^01[0-2][0-9]{8}$");
+            if (phoneNumpattern.IsMatch(phone))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

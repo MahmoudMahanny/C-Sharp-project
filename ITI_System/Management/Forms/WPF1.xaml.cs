@@ -29,18 +29,6 @@ namespace ITI_System
             lboxinstructor.ItemsSource = context.Instructor.ToList();
         }
 
-        //public WPF1(int ID)
-        //{
-        //    InitializeComponent();
-        //    MainWindow m = new MainWindow();
-        //    var ins = (from I in context.instructor
-        //               where I.ID == ID
-        //               select I).FirstOrDefault();
-        //    m.txtInstrID.Text = ins.ID.ToString();
-        //    m.txtInstrName.Text = ins.name;
-        //    m.txtInstrAddress.Text = ins.address;
-        //    m.txtInstrEmail.Text = ins.email;
-        //}
 
         private bool IsAllLetters(string s)
         {
